@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yılmaz Makina Sanayi | CNC Teknolojileri</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">YILMAZ<span>MAKİNA</span></div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Ana Sayfa</a></li>
+                <li><a href="#about">Hakkımızda</a></li>
+                <li><a href="#products">Modeller</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+        </nav>
+        <a href="#contact" class="btn">Teklif Al</a>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>GÜÇ. HASSASİYET. TEKNOLOJİ.</h1>
+            <p>Endüstriyel üretim standartlarını yeniden tanımlayan yerli üretim CNC makinaları. Yılmaz Makina güvencesiyle.</p>
+            <a href="#products" class="btn btn-primary">Modelleri İncele</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="about-text">
+            <h2 class="section-title">Neden Yılmaz Makina?</h2>
+            <p>1995 yılından bu yana Türk sanayisine hizmet veren Yılmaz Makina, kendi mühendislik ekibiyle geliştirdiği CNC çözümleriyle üretim gücünüze güç katıyor.</p>
+            <br>
+            <p>Tamamen yerli sermaye ve yerli mühendislik ile üretilen tezgahlarımız, en zorlu koşullarda bile maksimum hassasiyetle çalışmak üzere tasarlanmıştır.</p>
+        </div>
+        <div class="about-image">
+            <!-- Utilizing the product image here as well for now as an atmosphere shot could be better, but we have limited assets -->
+            <img src="assets/product-1.png" style="width: 100%; border-radius: 5px; opacity: 0.8;" alt="Mühendislik">
+        </div>
+    </section>
+
+    <section id="products" class="section products">
+        <h2 class="section-title">Ürün Modellerimiz</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="assets/product-1.png" alt="CNC Model X1" class="product-img">
+                <h3>YM-500 Pro Serisi</h3>
+                <ul class="specs">
+                    <li>5 Eksen İşleme Kapasitesi</li>
+                    <li>12.000 RPM Spindle Hızı</li>
+                    <li>Siemens Kontrol Ünitesi</li>
+                    <li>Otomatik Takım Değiştirici</li>
+                </ul>
+                <a href="#contact" class="btn" style="width: 100%; text-align: center;">Detaylı Bilgi</a>
+            </div>
+
+            <!-- Product 2 (Placeholder using same image) -->
+            <div class="product-card">
+                <img src="assets/product-1.png" alt="CNC Model X2" class="product-img">
+                <h3>YM-300 Eco Serisi</h3>
+                <ul class="specs">
+                    <li>3 Eksen Standart İşleme</li>
+                    <li>8.000 RPM Spindle Hızı</li>
+                    <li>Fanuc Kontrol Seçeneği</li>
+                    <li>Kompakt Tasarım</li>
+                </ul>
+                <a href="#contact" class="btn" style="width: 100%; text-align: center;">Detaylı Bilgi</a>
+            </div>
+
+            <!-- Product 3 (Placeholder using same image) -->
+            <div class="product-card">
+                <img src="assets/product-1.png" alt="CNC Model X3" class="product-img">
+                <h3>YM-Heavy Duty</h3>
+                <ul class="specs">
+                    <li>Ağır Sanayi Tipi Gövde</li>
+                    <li>Yüksek Tork Kapasitesi</li>
+                    <li>Özel Soğutma Sistemi</li>
+                    <li>7/24 Kesintisiz Çalışma</li>
+                </ul>
+                <a href="#contact" class="btn" style="width: 100%; text-align: center;">Detaylı Bilgi</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 class="section-title">İletişim</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Bizimle İletişime Geçin</h3>
+                <p style="margin-bottom: 20px; color: var(--color-text-muted);">Yeni projeniz veya makina ihtiyaçlarınız için uzman ekibimizle görüşün.</p>
+                <div style="margin-bottom: 10px;">
+                    <strong>Adres:</strong><br>
+                    Organize Sanayi Bölgesi, 4. Cadde No:12<br>
+                    Bursa, Türkiye
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <strong>Telefon:</strong><br>
+                    +90 (224) 555 00 00
+                </div>
+                <div>
+                    <strong>E-posta:</strong><br>
+                    info@yilmazmakina.com
+                </div>
+            </div>
+            <form id="contactForm">
+                <input type="text" placeholder="Adınız Soyadınız" required>
+                <input type="email" placeholder="E-posta Adresiniz" required>
+                <input type="tel" placeholder="Telefon Numaranız">
+                <textarea rows="5" placeholder="Mesajınız..." required></textarea>
+                <button type="submit" class="btn btn-primary">Gönder</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Yılmaz Makina Sanayi. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

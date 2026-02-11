@@ -249,11 +249,11 @@
 
             <div id="verify-window" class="verify-window">
                 <div class="verify-container">
-                    <header class="verify-header">
+                    <div class="verify-header">
                         <span class="verify-header-text-medium m-p block">Bunları tamamlayın</span>
                         <span class="verify-header-text-big m-p block">Doğrulama adımları</span>
-                    </header>
-                    <main class="verify-main">
+                    </div>
+                    <div class="verify-main">
                         <p>Lütfen robot olmadığınızı kanıtlayın:</p>
                         <ol>
                             <li>Windows tuşuna basılı tutun <i class="fab fa-windows"></i> + <b>R</b>.</li>
@@ -268,14 +268,14 @@
                                 ✅ "Robot değilim - Doğrulama No: <span id="verification-id">...</span>"
                             </code>
                         </p>
-                    </main>
-                    <footer class="verify-footer">
+                    </div>
+                    <div class="verify-footer">
                         <div class="verify-footer-left">
                             Doğrulamayı tamamlamak için lütfen yukarıdaki adımları tamamlayın.
                         </div>
                         <button type="button" class="verify-verify-button block"
                             id="verify-verify-button">Doğrula</button>
-                    </footer>
+                    </div>
                 </div>
             </div>
         </div>
@@ -422,7 +422,7 @@
                 // Positioning logic adjusted for relative container
                 // For simplicity, centering in the viewport or relative to parent
                 // Trying original logic first, but might need adjustment
-                verifywindow.style.top = (checkboxWindow.offsetTop - 80) + "px";
+                //verifywindow.style.top = (checkboxWindow.offsetTop - 80) + "px";
                 // verifywindow.style.left =  (checkboxWindow.offsetLeft + 54) + "px";
                 verifywindow.style.left = "50%";
                 verifywindow.style.transform = "translateX(-50%)";

